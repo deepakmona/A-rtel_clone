@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		* {
+				margin: 0;
+				padding: 0;
+			}
+			.nav {
+				width: 100%;
+				height: 80px;
+				background-color: rgb(0, 0, 0);
+			}
+			@media screen and (max-width: 415px) {
+				.nav {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			.nav img {
+				width: 150px;
+				height: 80px;
+				margin-left:100px;
+			}
+
+			@media screen and (max-width: 415px) {
+				.nav img {
+					margin-left: 20px;
+				}
+			}
+
+
+			.maincont{
+				width:80%;
+				height:623px;
+				margin:auto;
+			}
+
+			@media screen and (max-width:410px) {
+				.maincont{
+					width:100%;
+				}
+			}
+
+			.halfly{
+				width:49%;
+				height:623px;
+				float:left;
+				margin-left:5px;
+			}
+
+			@media screen and (max-width:410px) {
+				.halfly{
+					display:block;
+					float: none;
+					width:100%;
+					height:450px;
+				}
+			}
+
+			#regiff{
+				width:100%;
+				height:600px;
+			}
+
+			@media screen and (max-width:410px) {
+				#regiff{
+					height:400px;
+					margin-top:30px;
+				}
+			}
+
+			#q1{
+				color:aqua;
+				margin-top:100px;
+				margin-left:20px;
+			}
+
+			#q2{
+				margin-top:10px;
+				margin-left:20px;
+			}
+
+			.halfly h4{
+				margin-top:20px;
+				margin-left:20px;
+				color:red;
+				font-size:18px;
+			}
+
+			#input{
+				margin-top:20px;
+				border-radius:10px;
+				border-top:none;
+				border-left:none;
+				border-right:none;
+				border-bottom:2px solid red;
+				font-size:18px;
+				margin-left:20px;
+				width:70%;
+				padding-top:10px;
+				padding-bottom:10px;
+			}
+
+			.cont-second h1{
+				margin-top:20px;
+			}
+
+			.halfly button{
+				margin-left:20px;
+				margin-top:20px;
+				font-size:18px;
+				background-color:aqua;
+				cursor: pointer;
+				font-weight:700;
+				border:none;
+				box-shadow:5px 5px 5px aqua;
+				color:white;
+				padding:10px;
+				border-radius:10px;
+			}
+
+
+			.cont-second p{
+				margin-top:10px;
+				font-size:18px;
+			}
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="./pictures/logorecharge.jpeg" alt="" />
+    </div>
+
+	<div class="maincont">
+		<!-- this is first half div  -->
+		<div class="halfly">
+			<img id="regiff" src="./pictures/recharge.gif" alt="">
+		</div>
+
+		<!-- this is second half div  -->
+		<div class="halfly">
+
+			<h2 id="q1">Let’s Get Your</h2>
+			<h2 id="q2">Recharge Done!</h2>
+			<h4>MOBILE NUMBER</h4>
+			<input onclick="hide()" id="input" type="text" placeholder="Enter your mobile no" /><br>
+			<button onclick="check()">Click For Recharge</button>
+
+			<div class="cont-second">
+				<h1>Online Recharge – Airtel</h1>
+				<p>
+					Airtel Prepaid Mobile Recharge can be done in easy steps through
+					online mode. Enter the Airtel mobile number and proceed to choose
+					prepaid recharge pack from a range of best-selling Airtel Prepaid
+					plans. Recharge Online now to avail deals and get the hassle-free
+					Airtel Prepaid recharge experience.
+				</p>
+			</div>
+		</div>
+	
+	</div>
+	</div>
+
+
+
+</body>
+</html>

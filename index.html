@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myairtel</title>
+    <link rel="stylesheet" href="myairtel.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    
+    <style>
+     
+    </style>
+</head>
+<body>
+    <!-- start from here navbar coding so let's go and start it so keep going and start .... -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="nav-link active" id="home" aria-current="page" href="">A@irtel</a>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              </li>
+
+
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PREPAID
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Prepaid</a></li>
+                  <li><a class="dropdown-item" href="newrecharge.html">Recharge</a></li>
+                  <li><a class="dropdown-item" href="new prepaid sim.html">New Prepaid sim</a></li>
+                  <li><a class="dropdown-item" href="#">View</a></li>
+                  <li><a class="dropdown-item" href="#">International Romings</a></li>
+                  <li><a class="dropdown-item" href="#">Switch prepaid to Postpaid</a></li>
+                  <li><a class="dropdown-item" href="#">Port to prepaid Airtel</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Postpaid
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Postpaid</a></li>
+                  <li><a class="dropdown-item" href="paybill.html">Pay Bill</a></li>
+                  <li><a class="dropdown-item" href="#">View plans</a></li>
+                  <li><a class="dropdown-item" href="#">Port to airtel</a></li>
+                  <li><a class="dropdown-item" href="#">Free sim delevery</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    BROADBAND
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">BROADBAND</a></li>
+                  <li><a class="dropdown-item" href="paybill.html">Pay bill</a></li>
+                  <li><a class="dropdown-item" href="#">Buy ne connection</a></li>
+                  <li><a class="dropdown-item" href="#">View plans</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    DTH
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">DTH</a></li>
+                  <li><a class="dropdown-item" href="newrecharge.html">Recharge</a></li>
+                  <li><a class="dropdown-item" href="#">New connectio</a></li>
+                  <li><a class="dropdown-item" href="#">View plans</a></li>
+                  <li><a class="dropdown-item" href="#">Upgrade</a></li>
+                  <li><a class="dropdown-item" href="#">Xstram</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    AIRTEL BLACK
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">AIRTEL BLACK</a></li>
+                  <li><a class="dropdown-item" href="#">Pay bill</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">View Plans</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button id="loginbtn"><a href="form.html">Login Here</a></button>
+            <form class="d-flex">
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+    <!-- start from here first container or div   -->
+
+
+    <div class="cont">
+   <div class="a2">
+    <p id="s1">We are obsessed with delivering exceptional experiences to you.</p>
+   </div>
+   <div class="a2">
+    <img id="s2" src="pictures/img1.png" alt="">
+   </div>
+    </div>
+
+
+
+    <!-- this is container second coding so let's go ..... -->
+
+
+    <div class="cont1">
+      <h1 id="s3">A connection for all</h1>
+      <div class="a3">
+   <p>Bharti Airtel Limited is a leading telecommunication company globally. Headquartered in New India, we are the most trusted provider of ICT services with a global network across the USA, Europe, Africa, Middle East, Asia-Pacific, India, and SAARC regions. Airtel Telecommunications ranks amongst the top 3 mobile service providers around the world (as per subscribers) </p><br><br>
+   <p>Through the diverse product portfolio and strategically located submarine cables and satellite network running across 365,000+ RKMs in 50 countries and 5 continents, we are pushing the boundaries in digital service delivery with a key focus on enhanced end-user experience, round-the-clock infrastructure availability, and superior service quality.</p>
+      </div>
+    </div>
+
+
+
+    <!-- start from here new container coding start so let's go and start ... -->
+
+
+    <div class="cont2">
+        <div class="a4">
+                <h1>17 countries</h1>
+            <h3>Across asia & africa</h3>
+        </div>
+        <div class="a4">
+            <h1>Top 3</h1>
+            <h3>mobile service provider globally</h3>
+        </div>
+        <div class="a4">
+            <h1>Over 490 million</h1>
+            <h3>customers across its operatios</h3>
+        </div>
+        <div class="a4">
+            <h1 id="counting">30,568</h1>
+            <h3>+RKMs in 10 countries & 2 contenitents</h3>
+        </div>
+    </div>
+
+
+
+<!-- this is new container coding so keep going on and this is cont3 .....world graph div... -->
+
+
+    <div class="cont3" id="worldMap">
+        <img class="cont3" src="pictures/graph.svg" alt="">
+    </div>
+
+
+
+    <!-- this is cont4 div coding so let's start it and keep on .. -->
+    
+    <div class="cont4">
+        <h1>A large spectrum of products offerings</h1>
+  <div class="a6">
+    <img id="s7" src="pictures/girl.png" alt="">
+  </div>
+  <div class="a6">
+    <img id="s5" src="pictures/icon.png" alt="">
+    <h1>Mobile services</h1>
+    <h2>2G, 3G, 4G services, with 5G services</h2>
+    <h2> network across India</h3>
+        <a href=""><button id="cot4" >Learn More</button></a>
+  </div>
+    </div>
+
+
+
+    <!-- this is cont coding so let's do it and start now ........ -->
+
+
+    <div class="cont5">
+     <div class="a9">
+        <img id="s11" src="pictures/wifi icon.png" alt="">
+        <h1>Home Service</h1>
+        <p>Wireless services, mobile commerce, fixed lines services, high-speed home broadband, DTH, and many more across 700 cities pan-India. By providing a speed of 1GBPS we are helping India to go digital.</p>
+        <button> <a href="">Learn More</a></button>
+     </div>
+     <div class="a9">
+        <img id="s12" src="pictures/wifi img.png" alt="">
+     </div>
+    </div>
+
+
+
+    <!-- this is cont6 coding so let's do  it ......-->
+
+
+    <div class="cont6">
+        <div class="a15">
+            <img src="pictures/tv.png" alt="">
+        </div>
+        <div class="a15">
+            <h1>Digital TV Service</h1>
+            <p>With a diverse range of services, we are a key player in the Digital TV Services industry offering both High and Standard resolution TV Services with 635 channels including 80 HD channels, 5 international channels, and 3 interactive services.</p>
+            <a href=""><button>Learn More</button></a>
+        </div>
+    </div>
+
+
+
+<!-- almost footer to second up div coding start here s keep on it and do it smothly ........ -->
+
+
+    <div class="footer">
+     <div class="a21">
+        <img src="pictures/cart.png" alt="">
+        <h1>Airtel Business</h1>
+        <p>Bharti Airtel is a leading and most trusted provider of ICT services in India. We serve over 1200 global enterprises, 2000 large and 1 million medium/small businesses across India. Airtel Business offers a diverse portfolio of products and services such as Data Connectivity, Voice & Messaging, Conferencing, Cloud, Data Center, Security, IoT, CPaaS (Airtel IQ), NaaS, Enterprise Mobility, Network Integration & Professional services to Enterprises, Government, Carriers, Small & Medium Businesses, OTTS, and Mobile Network Operators across the globe.</p>
+     </div>
+     <div class="a21">
+        <img id="a21" src="pictures/busines.png" alt="">
+     </div>
+    </div>
+
+
+<div class="foot">
+
+<div class="a22">
+    <h1 id="a22" >Fing More About Airtel</h1>
+</div>
+
+<div class="a22">
+    <img src="pictures/profil.jpg" alt="">
+    <a href=""><h2>Our Brands Artel</h2></a>
+</div>
+
+<div class="a22">
+    <img src="pictures/sustant.svg" alt="">
+    <a href=""><h2>Sustanibility</h2></a>
+</div>
+
+<div class="a22">
+    <img src="pictures/Ombuds.svg" alt="">
+    <a href=""><h2>Ombuds Office</h2></a>
+</div>
+
+<div class="a22">
+    <img src="pictures/Ombuds.svg" alt="">
+    <a href=""><h2>Ombuds Office</h2></a>
+</div>
+
+</div>
+
+<!-- starting from here some new features so let's go and start now  -->
+
+<div class="newfeatures">
+
+  <div class="card">
+    <img src="./pictures/airtelcomapny.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text fs-4">Find opportunity to work,learn and grow with Bharti Airtel.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./pictures/5gpic.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text fs-4">Discover how Airtel is contiunally transforming India.</p>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<!-- start from here footer coding so let's go and start it ...... -->
+
+
+<div class="mainfoot">
+    <div class="a25">
+        <a href="">Airtel Blackbill Payment</a>
+        <a href="">Prepaid Recharge</a>
+        <a href="">Postpaid Bill Payment</a>
+        <a href="">DTH Recharge</a>
+        <a href="">Broadband Bill Payment</a>
+        <a href="">Exciting Offers</a>
+        <a href="">Xtream</a>
+        
+    </div>
+    <div class="a25">
+        <a href="">Find a store</a>
+        <a href="">Check Coverage</a>
+        <a href="">Ownership Transfer</a>
+        <a href="">Manage Your account</a>
+        <a href="">ISP Near Me</a>
+        <a href="">Wynk Music</a>
+        <a href="">Broadband FAQs</a>
+
+    </div>
+    <div class="a25">
+        <a href="">Buy DTH New Connection</a>
+        <a href="">Buy Prepaid New Connection</a>
+        <a href="">Buy Postpaid New Connection</a>
+        <a href="">Buy Broadband New</a>
+        <a href="">Connection</a>
+        <a href="">Buy Airtel Black Plan</a>
+        
+    </div>
+    <div class="a25">
+        <a href="">Brand</a>
+        <a href="">Career</a>
+        <a href="">Partner</a>
+        <a href="">Business</a>
+        <a href="">About Airtel</a>
+        <a href="">Press Release</a>
+        <a href="">Investor Support</a>
+   
+    </div>
+    <div class="a26">
+     <a href=""><img src="pictures/fb.jpg" alt="error"></a>
+     <a href=""><img src="pictures/insta.jpg" alt="error"></a>
+     <a href="  linkedin.com/in/deepak-kumar-12b12a213"><img src="pictures/ln.png" alt="error"></a>
+     <a href=""><img src="pictures/youtube.png" alt="error"></a><br>
+
+     <a id="nn" href="#home">Back To Top</a>
+     <a id="bb" href="#home"><img src="pictures/up.png" alt=""></a>
+    </div>
+
+</div>
+
+<div class="rights">
+
+  <div class="righthalf">
+    <p id="right1">Copyright © 2024 Airtel Ltd. All rights reserved.</p>
+  </div>
+
+  <div class="righthalf">
+    <p>Terms & conditions</p>
+    <p>Press release</p>
+    <p>Regulatory</p>
+  </div>
+
+  
+</div>
+</body>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+// start from here java script so let's go and start it .........
+
+// for count function in java script
+
+ // Function to animate counting from 0 to a specified number
+ function countAnimation(targetNumber) {
+    // Get the element where counting will happen
+    const countingElement = document.getElementById('counting');
+    
+    // Initial count
+    let count = 0;
+
+    // Set the interval for counting animation
+    const intervalId = setInterval(() => {
+      // Update the counting element with the current count
+      countingElement.textContent = count;
+
+      // Increase count by 1
+      count++;
+
+      // Stop the animation when the target number is reached
+      if (count > targetNumber) {
+        clearInterval(intervalId);
+      }
+    },3); // Change the interval duration for faster/slower animation
+  }
+
+  // Start the counting animation with the target number (e.g., 700)
+  countAnimation(30568);
+  
+
+//  this is world map js  
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Create a map centered on the world
+  const map = L.map('worldMap').setView([28.6139, 77.2090], 15);
+
+  // Add a tile layer to the map (OpenStreetMap as an example)
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Add a marker to a specific location (e.g., New York City)
+  const marker = L.marker([28.6139, 77.2090]).addTo(map);
+  marker.bindPopup('Airtel Headquarters').openPopup();
+});
+
+
+</script>
+</html>
